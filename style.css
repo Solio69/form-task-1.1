@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "Barlow";
+    src: url('fonts/Barlow-Regular.otf') format("woff2"),
+    url('fonts/Barlow-Regular.otf') format("woff2");
+    font-weight: 300;
+    font-style: normal;
+} 
+body{
+    background-color: #EFF6FF;
+    font-family: 'Barlow', Arial, sans-serif;;
+    
+    color: #2A4A5C;
+}
+img{
+    width: 100%;
+    
+    height: auto;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.content_wrapper {
+    background-color: #FFFFFF;
+    margin-top: 40px;
+    display: inline-flex;
+    
+}
+.content_right{
+    max-width: 450px;
+}
+
+.content_left {
+    padding: 50px 35px 0;
+}
+
+
+.content_left-title {
+    font-weight: 600;
+}
+.content_left-text{
+    font-weight: 200;
+    font-size: 11px;
+    padding-top: 10px;
+    
+}
+.content_left-registration-social{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 25px;
+}
+.registration-social_btn{
+    color:#EEEEEE;
+    font-size: 10px;
+    font-weight: 200;
+    text-align: center;
+    padding: 6px 25px 6px 8px;
+    width: 120px;
+}
+.registration-social_btn:hover{
+    cursor: pointer;
+    background-color:#16365e;
+    transition: background-color linear 0.3s;
+}
+.registration-social_btn-img{
+    width: 10px;
+    height: 12px;
+    padding-right: 6px;
+}
+.fasebook {
+    /* margin-right: 10px; */
+    background-color:#255A9B;
+}
+.linkedin{
+    background-color:#0076B6;
+}
+.content_left-underline-wrapper{
+    text-align: center;
+    margin-top: 20px;
+}
+.content_left-underline{
+    text-align: center;
+    
+    font-size: 10px;
+    position: relative;
+}
+.content_left-underline::before{
+    display: block;                 
+    width:60px;                    
+    content: '';                     
+    border-bottom: 1px solid #96A5B1;
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+   
+    
+}
+.content_left-underline::after{
+    display: block;                 
+    width:60px;                    
+    content: '';                     
+    border-bottom: 1px solid #96A5B1;
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+}
+.info-img{
+    width: 10px;
+}
+.content_left-form{
+    margin-top: 20px;
+}
+.form_input_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form_input{
+    position: relative;
+    border: 1px solid #96A5B1;
+    padding-top: 20px;
+    padding-bottom: 3px;
+    width: 150px;
+}
+.form_input:focus{
+    border-left:2px solid #3698FB;
+    outline:0;
+    
+}
+.form_input_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.form_input-wrapper{
+    position: relative;
+    display: flex;
+}
+.form_input-placeholder{
+    position: absolute;
+    padding-left: 3px;
+    padding-top: 3px;
+    margin: 0;
+    font-size: 10px;
+}
+.form_input-radio-title{
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.form_input-radio-text{
+    font-size: 10px;
+    margin-top: 10px;
+}
+.form_input-radio_wrapper{
+    display: flex;
+    margin-top: 30px;
+}
+.form_input-radio-item{
+    font-size: 10px;
+}
+.form_input-radio_info{
+    max-width: 200px;
+    font-size: 10px;
+    margin-top: 20px;
+}
+.form_input-checkbox{
+    font-size: 10px;
+    margin-top: 30px;
+}
+.form_btn{
+    margin-top: 30px;
+}
