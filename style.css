@@ -13,7 +13,6 @@ body{
 }
 img{
     width: 100%;
-    
     height: auto;
 }
 .container {
@@ -24,17 +23,22 @@ img{
 .content_wrapper {
     background-color: #FFFFFF;
     margin-top: 40px;
-    display: inline-flex;
-    
+    display: flex;
+    box-shadow: 5px 20px 25px rgba(26, 181, 219, 0.342);
 }
 .content_right{
     max-width: 450px;
+    position: relative;
 }
-
+.content_right-logo{
+    position: absolute;
+    max-width: 100px;
+    top: 30px;
+    left: 35px;
+}
 .content_left {
-    padding: 50px 35px 0;
+    padding: 50px 40px 0;
 }
-
 
 .content_left-title {
     font-weight: 600;
@@ -43,7 +47,6 @@ img{
     font-weight: 200;
     font-size: 11px;
     padding-top: 10px;
-    
 }
 .content_left-registration-social{
     display: flex;
@@ -53,11 +56,11 @@ img{
 }
 .registration-social_btn{
     color:#EEEEEE;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 200;
     text-align: center;
     padding: 6px 25px 6px 8px;
-    width: 120px;
+    max-width: 110px;
 }
 .registration-social_btn:hover{
     cursor: pointer;
@@ -70,7 +73,6 @@ img{
     padding-right: 6px;
 }
 .fasebook {
-    /* margin-right: 10px; */
     background-color:#255A9B;
 }
 .linkedin{
@@ -82,7 +84,6 @@ img{
 }
 .content_left-underline{
     text-align: center;
-    
     font-size: 10px;
     position: relative;
 }
@@ -94,8 +95,6 @@ img{
     position: absolute;
     left: 20px;
     bottom: 5px;
-   
-    
 }
 .content_left-underline::after{
     display: block;                 
@@ -115,24 +114,24 @@ img{
 .form_input_wrapper{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .form_input{
     position: relative;
     border: 1px solid #96A5B1;
     padding-top: 20px;
     padding-bottom: 3px;
-    width: 150px;
+    max-width: 135px;
 }
 .form_input:focus{
     border-left:2px solid #3698FB;
     outline:0;
-    
 }
 .form_input_wrapper{
     display: flex;
     justify-content: space-between;
 }
-.form_input-wrapper{
+.form_input-item{
     position: relative;
     display: flex;
 }
@@ -155,19 +154,69 @@ img{
 .form_input-radio_wrapper{
     display: flex;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 .form_input-radio-item{
+    padding-right: 8px;
+}
+.input-radio-item{
+    cursor: pointer;
+}
+.input-radio-img{
+    padding-left: 3px;
+    width: 8px;
+    cursor: pointer;
+}
+
+.input-radio-label{
     font-size: 10px;
+    font-weight: 600;
 }
 .form_input-radio_info{
-    max-width: 200px;
+    max-width: 170px;
     font-size: 10px;
+    font-weight: 200;
+    line-height: 1.5;
     margin-top: 20px;
+    padding: 8px 8px 8px 10px;
+    box-shadow: 5px 8px 5px rgba(196, 196, 196, 0.3);
+    border-radius: 3px;
+    opacity: 0.8;
 }
 .form_input-checkbox{
     font-size: 10px;
     margin-top: 30px;
 }
+.input-checkbox-label{
+    font-size: 9px;
+}
+.input-checkbox-link{
+    color:#3698FB;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.input-checkbox-link:hover{
+    color:#16365e;
+    transition: color linear 0.3s;
+}
 .form_btn{
     margin-top: 30px;
+    color:#EFF6FF;
+    background-color: #3698FB;
+    padding: 8px 40px;
+    border: none;
+    border-radius: 3px;
+    font-size: 9px;
+    font-weight: 600;
 }
+.form_btn:hover{
+    cursor: pointer;
+    background-color:#16365e;
+    transition: background-color linear 0.3s;
+}
+.form_btn:focus{
+    outline: none;
+    border-radius: 3px;
+}
+
+

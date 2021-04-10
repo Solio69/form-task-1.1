@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="style.css" rel="stylesheet">
+    <link href="mediaCss.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="content_wrapper">
-            <div class="content_right"><img src="img/bg.jpg" alt=""/></div>
+            <div class="content_right">
+                <img src="img/bg.jpg" alt=""/>
+                <img class="content_right-logo" src="img/logo.svg" alt=""/>
+            </div>
             <div class="content_left">
                 <div class="content_left-title">
                     Get iinto it today
@@ -33,11 +37,11 @@
                 </div>
                 <form class="content_left-form">
                     <div class="form_input_wrapper">
-                        <div class="form_input-wrapper">
+                        <div class="form_input-item">
                             <input type="text" class="form_input"/>
                             <p class="form_input-placeholder">Email</p>
                         </div>
-                        <div class="form_input-wrapper">
+                        <div class="form_input-item">
                             <input type="text" class="form_input"/>
                             <p class="form_input-placeholder">Phone</p>
                         </div>
@@ -46,28 +50,33 @@
                     <div class="form_input-radio-text">Select the type investor you are bellow.</div>
                     <div class="form_input-radio_wrapper">
                         <div class="form_input-radio-item">
-                            <input type="radio"/><label>individual</label><img class="info-img" src="img/info.svg" alt=""/>
+                            <input class="input-radio-item" type="radio" name="individual"/>
+                            <label class="input-radio-label">individual</label>
+                            <img class="input-radio-img" src="img/info.svg" alt=""/>
                         </div>
                         <div class="form_input-radio-item">
-                            <input type="radio"/><label>Business</label><img class="info-img" src="img/info.svg" alt=""/>
+                            <input class="input-radio-item" type="radio" name="Business"/>
+                            <label class="input-radio-label">Business</label>
+                            <img class="input-radio-img" src="img/info.svg" alt=""/>
                         </div>
                         <div class="form_input-radio-item">
-                            <input type="radio"/><label>IRA</label><img class="info-img" src="img/info.svg" alt=""/>
+                            <input class="input-radio-item" type="radio" name="IRA"/>
+                            <label class="input-radio-label">IRA</label>
+                            <img class="input-radio-img"src="img/info.svg" alt=""/>
                         </div>
                         <div class="form_input-radio-item">
-                            <input type="radio"/><label>Trust</label><img class="info-img" src="img/info.svg" alt=""/>
+                            <input class="input-radio-item" type="radio" name="Trust"/>
+                            <label class="input-radio-label">Trust</label>
+                            <img class="input-radio-img" src="img/info.svg" alt=""/>
                         </div>
                     </div>
-                    
                     <div class="form_input-radio_info">I am a natural person investing on my own behalf as a sole owner, join tenent, or tenant in common.</div>
                     <div class="form_input-checkbox">
                         <input type="checkbox"/>
-                        <label>I agree to the terms and receiving notification form iintoo <a>View full terms</a></label>
+                        <label class="input-checkbox-label">I agree to the terms and receiving notification form iintoo <a href="#" class="input-checkbox-link">View full terms</a></label>
                     </div>
                     <button class="form_btn" type="submit">Create Account</button>
                 </form>
-               
-                
             </div>
         </div>
     </div>
