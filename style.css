@@ -26,29 +26,29 @@ img{
     display: flex;
     box-shadow: 5px 20px 25px rgba(26, 181, 219, 0.342);
 }
-.content_right{
+.content-direction-left{
     max-width: 450px;
     position: relative;
 }
-.content_right-logo{
+.content-direction-left-logo{
     position: absolute;
     max-width: 100px;
     top: 30px;
     left: 35px;
 }
-.content_left {
+.content-direction-right {
     padding: 50px 40px 0;
 }
 
-.content_left-title {
+.content-direction-right-title {
     font-weight: 600;
 }
-.content_left-text{
+.content-direction-right-text{
     font-weight: 200;
     font-size: 11px;
     padding-top: 10px;
 }
-.content_left-registration-social{
+.content-direction-right-registration-social{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -78,16 +78,16 @@ img{
 .linkedin{
     background-color:#0076B6;
 }
-.content_left-underline-wrapper{
+.content-direction-right-underline-wrapper{
     text-align: center;
     margin-top: 20px;
 }
-.content_left-underline{
+.content-direction-right-underline{
     text-align: center;
     font-size: 10px;
     position: relative;
 }
-.content_left-underline::before{
+.content-direction-right-underline::before{
     display: block;                 
     width:60px;                    
     content: '';                     
@@ -96,7 +96,7 @@ img{
     left: 20px;
     bottom: 5px;
 }
-.content_left-underline::after{
+.content-direction-right-underline::after{
     display: block;                 
     width:60px;                    
     content: '';                     
@@ -108,7 +108,7 @@ img{
 .info-img{
     width: 10px;
 }
-.content_left-form{
+.content-direction-right-form{
     margin-top: 20px;
 }
 .form_input_wrapper{
@@ -219,16 +219,16 @@ img{
     border-radius: 3px;
 }
 @media (max-width: 832px) { 
-    .content_right{
+    .content-direction-left{
         max-width: 400px;
     }
-    .content_left {
+    .content-direction-right {
         padding: 30px 20px 0;
     }
-    .content_left-underline-wrapper{
+    .content-direction-right-underline-wrapper{
         margin-top: 10px;
     }
-    .content_left-form{
+    .content-direction-right-form{
         margin-top: 10px;
     }
 }
@@ -244,10 +244,10 @@ img{
         overflow: hidden;
     }
   
-    .content_left {
+    .content-direction-right {
         padding: 20px 30px 15px;
     }
-    .content_left-registration-social{
+    .content-direction-right-registration-social{
         justify-content:space-evenly;
     }
     .form_input_wrapper{
@@ -255,7 +255,7 @@ img{
     }
 }
 @media (max-width: 370px) {
-    .content_left-registration-social{
+    .content-direction-right-registration-social{
         flex-direction: column;
         align-items: center;
     }    
