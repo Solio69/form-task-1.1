@@ -218,5 +218,56 @@ img{
     outline: none;
     border-radius: 3px;
 }
-
-
+@media (max-width: 832px) { 
+    .content_right{
+        max-width: 400px;
+    }
+    .content_left {
+        padding: 30px 20px 0;
+    }
+    .content_left-underline-wrapper{
+        margin-top: 10px;
+    }
+    .content_left-form{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 760px){
+    .content_wrapper {
+        margin-top: 0;
+        box-shadow: none;
+        flex-direction: column;
+    }
+    .content_right{
+        max-width: 100%;
+        max-height: 150px;
+        overflow: hidden;
+    }
+  
+    .content_left {
+        padding: 20px 30px 15px;
+    }
+    .content_left-registration-social{
+        justify-content:space-evenly;
+    }
+    .form_input_wrapper{
+        justify-content:space-evenly;
+    }
+}
+@media (max-width: 370px) {
+    .content_left-registration-social{
+        flex-direction: column;
+        align-items: center;
+    }    
+    .registration-social_btn{
+        width: 110px;
+        margin-bottom: 10px;
+    }
+    .form_input_wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form_input-item{
+        margin-bottom: 10px;
+    }
+}
